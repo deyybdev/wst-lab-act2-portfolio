@@ -1,10 +1,35 @@
 /*---------------------------------index---------------------------------*/
-/* --- GLOBAL RESET & FONTS --- */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/Poppins-Black.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, strong {
+    font-weight: 700;
 }
 
 body {
@@ -20,7 +45,6 @@ body {
     padding: 0 20px;
 }
 
-/* --- TOP SECTION / PROFILE --- */
 .top-section {
     display: flex;
     align-items: flex-start;
@@ -30,12 +54,11 @@ body {
     background-color: transparent;
 }
 
-/* New: Hover Container Logic */
 .profile-img-container {
     position: relative;
     width: 175px;
     height: 175px;
-    flex-shrink: 0; /* Prevents image from squishing */
+    flex-shrink: 0;
 }
 
 .profile-img {
@@ -75,7 +98,6 @@ body {
 .name-section h1 {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 8px;
     letter-spacing: -0.02em;
 }
 
@@ -102,11 +124,26 @@ body {
     font-weight: 500;
     border-bottom: 1.5px solid #ccc;
     padding-bottom: 2px;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 .links a:hover {
     border-bottom: 1.5px solid #000;
+}
+
+.blog-btn {
+    background-color: #000000;
+    color: #ffffff !important;
+    padding: 0px 30px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    transition: transform 0.2s ease; 
+}
+
+.blog-btn:hover {
+    transform: translateY(-3px);
+    background-color: #000000;
 }
 
 /* --- ABOUT SECTION & GRID --- */
@@ -179,6 +216,11 @@ body {
     text-decoration: underline;
 }
 
+.stack-group {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
+}
+
 .stack-category {
     margin-bottom: 20px;
 }
@@ -193,18 +235,23 @@ body {
 .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
 }
 
 .tag {
     background: #ffffff;
     border: 1px solid #e0e0e0;
-    padding: 6px 12px;
-    border-radius: 8px;
-    font-size: 0.75rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.85rem;
     font-weight: 500;
     color: #333;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    transition: all 0.2s ease;
+}
+
+.tag:hover {
+    border-color: #000;
+    transform: translateY(-2px);
 }
 
 /* --- BLOG LISTING --- */
