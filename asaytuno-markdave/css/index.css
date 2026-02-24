@@ -1,0 +1,226 @@
+/*---------------------------------HOME PAGE (INDEX)---------------------------------*/
+.top-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: transparent;
+}
+
+.profile-img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+.profile-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.hover-img {
+    opacity: 0;
+    z-index: 1;
+}
+
+.default-img {
+    opacity: 1;
+    z-index: 2;
+}
+
+.profile-img-container:hover .default-img {
+    opacity: 0;
+}
+
+.profile-img-container:hover .hover-img {
+    opacity: 1;
+}
+
+.info {
+    max-width: 700px;
+}
+
+.name-section h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.location-section p {
+    color: #000000;
+    font-size: 0.95rem; 
+    margin-bottom: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.loc-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    object-fit: contain;
+}
+
+.role-section p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    border-bottom: 1.5px solid #ccc;
+    padding-bottom: 2px;
+    transition: 0.2s;
+}
+
+.links a:hover {
+    border-bottom: 1.5px solid #000;
+}
+
+.social-wrapper {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.icon-link img {
+    width: 23px;
+    height: 23px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.icon-link:hover img {
+    transform: translateY(-2px);
+}
+
+.contact-text {
+    text-decoration: none;
+    color: #111;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2px;
+    transition: 0.2s;
+}
+
+.contact-text:hover {
+    border-bottom: 1px solid #000;
+}
+
+.blog-btn {
+    background-color: #000000;
+    color: #ffffff !important;
+    width: 470px;
+    height: 35px; 
+    padding: 0 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    border-radius: 1px;
+}
+
+.blog-btn:hover {
+    transform: translateX(3px);
+    background-color: #000000;
+}
+
+.about-section {
+    padding: 50px 0;
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+}
+
+.about-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.about-content {
+    flex: 2;
+}
+
+.about-content h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: -0.02em;
+}
+
+.about-content p {
+    color: #444;
+    margin-bottom: 15px;
+    text-align: justify;        
+}
+
+.experience-section {
+    width: 470px; 
+    margin-top: 40px;
+    border-top: 1px solid #eeeeee;
+    padding-top: 20px;
+}
+
+.experience-section h2 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 25px;
+}
+
+.exp-item {
+    margin-bottom: 30px;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.exp-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+.exp-date {
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.exp-sub {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #444;
+    margin: 2px 0;
+}
+
+.exp-desc {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}

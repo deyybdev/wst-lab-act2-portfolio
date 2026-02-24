@@ -1,0 +1,74 @@
+/*---------------------------------FONTS & RESET---------------------------------*/
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/Poppins-Black.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, strong {
+    font-weight: 700;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #111;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    padding: 40px 0;
+    font-size: 0.85rem;
+    color: #888;
+    border-top: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .top-section {
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 40px;
+    }
+
+    .profile-img-container {
+        width: 140px;
+        height: 140px;
+    }
+
+    .about-grid {
+        flex-direction: column;
+    }
+
+    .side-card {
+        max-width: 100%;
+    }
+}
