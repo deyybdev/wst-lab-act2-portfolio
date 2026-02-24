@@ -1,4 +1,5 @@
 /*---------------------------------index---------------------------------*/
+
 @font-face {
     font-family: 'Poppins';
     src: url('../assets/Poppins-Regular.ttf') format('truetype');
@@ -33,14 +34,14 @@ h1, h2, h3, h4, strong {
 }
 
 body {
-    background-color: #f3f3f3;
+    background-color: #f7f7f7;
     color: #111;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
 
 .main-container {
-    max-width: 850px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -48,16 +49,16 @@ body {
 .top-section {
     display: flex;
     align-items: flex-start;
-    gap: 40px;
-    padding-top: 80px;
-    padding-bottom: 50px;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     background-color: transparent;
 }
 
 .profile-img-container {
     position: relative;
-    width: 175px;
-    height: 175px;
+    width: 150px;
+    height: 150px;
     flex-shrink: 0;
 }
 
@@ -69,10 +70,9 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
-    transition: opacity 0.s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 
-/* Logic for swapping */
 .hover-img {
     opacity: 0;
     z-index: 1;
@@ -96,26 +96,38 @@ body {
 }
 
 .name-section h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: -0.02em;
 }
 
 .location-section p {
-    color: #555;
-    font-size: 0.95rem;
-    margin-bottom: 10px;
+    color: #000000;
+    font-size: 0.95rem; 
+    margin-bottom: 1px;
+    display: flex;
+    align-items: center;
+}
+
+.loc-icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    object-fit: contain;
 }
 
 .role-section p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .links {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 18px;
+    margin-top: 15px;
 }
 
 .links a {
@@ -131,25 +143,63 @@ body {
     border-bottom: 1.5px solid #000;
 }
 
+.social-wrapper {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.icon-link img {
+    width: 23px;
+    height: 23px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.icon-link:hover img {
+    transform: translateY(-2px);
+}
+
+.contact-text {
+    text-decoration: none;
+    color: #111;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2px;
+    transition: 0.2s;
+}
+
+.contact-text:hover {
+    border-bottom: 1px solid #000;
+}
+
 .blog-btn {
+
     background-color: #000000;
     color: #ffffff !important;
-    padding: 0px 30px;
+    width: 250px;
+    padding: 0px 15px;
     text-decoration: none;
     display: inline-block;
+    text-align: left;
     font-size: 1rem;
-    transition: transform 0.2s ease; 
+    margin-left: 5px;
+    transition: transform 0.2s ease;
+    border-radius: 2px;
 }
 
 .blog-btn:hover {
-    transform: translateY(-3px);
+    transform: translateX(3px);
     background-color: #000000;
 }
 
 /* --- ABOUT SECTION & GRID --- */
+
 .about-section {
     padding: 50px 0;
     border-top: 1px solid #ddd;
+    padding-top: 25px;
 }
 
 .about-grid {
@@ -163,9 +213,9 @@ body {
 }
 
 .about-content h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 15px; /* Added slight margin for breathing room */
+    margin-bottom: 15px;
     letter-spacing: -0.02em;
 }
 
@@ -176,15 +226,16 @@ body {
 }
 
 /* --- TECH STACK CARD (SIDEBAR) --- */
+
 .side-card {
     flex: 1;
-    max-width: 320px;
+    max-width: 350px;
 }
 
 .tech-stack-card {
     border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 24px;
+    border-radius: 2px;
+    padding: 20px ;
     background: #fff;
     box-shadow: 0 4px 12px rgba(0,0,0,0.02);
 }
@@ -193,12 +244,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
 
 .tech-stack-card h3 {
-    font-size: 0.9rem;
-    color: #666;
+    font-size: 1rem;
+    color: #000000;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 0;
@@ -228,33 +279,28 @@ body {
 .stack-category h4 {
     font-size: 0.85rem;
     color: #111;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     font-weight: 600;
 }
 
 .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 7px;
 }
 
 .tag {
     background: #ffffff;
     border: 1px solid #e0e0e0;
-    padding: 8px 16px;
-    border-radius: 4px;
+    padding: 3px 5px;
+    border-radius: 2px;
     font-size: 0.85rem;
     font-weight: 500;
     color: #333;
-    transition: all 0.2s ease;
-}
-
-.tag:hover {
-    border-color: #000;
-    transform: translateY(-2px);
 }
 
 /* --- BLOG LISTING --- */
+
 .blog-section {
     padding: 80px 0;
 }
@@ -319,6 +365,7 @@ body {
 }
 
 /* --- FOOTER --- */
+
 .footer-section {
     padding: 40px 0;
     font-size: 0.85rem;
@@ -327,6 +374,7 @@ body {
 }
 
 /* --- RESPONSIVE --- */
+
 @media (max-width: 768px) {
     .top-section {
         flex-direction: column;
@@ -347,6 +395,7 @@ body {
         max-width: 100%;
     }
 }
+
 /*---------------------------------posted blogs---------------------------------*/
 
 .blog-content {
@@ -416,16 +465,6 @@ hr {
     border: 0;
     border-top: 1px solid #ddd;
     margin: 40px 0;
-}
-
-.back-link {
-    text-decoration: none;
-    color: #666;
-    font-weight: 500;
-}
-
-.back-link:hover {
-    color: #000;
 }
 
 /*---------------------------------others---------------------------------*/
