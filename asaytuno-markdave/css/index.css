@@ -147,7 +147,7 @@
 }
 
 .about-section {
-    padding: 50px 0;
+    padding: 30px 0;
     border-top: 1px solid #ddd;
     padding-top: 25px;
 }
@@ -156,6 +156,7 @@
     display: flex;
     justify-content: space-between;
     gap: 50px;
+    width: 100%;
 }
 
 .about-content {
@@ -170,57 +171,90 @@
 }
 
 .about-content p {
-    color: #444;
+    color: #000000;
     margin-bottom: 15px;
     text-align: justify;        
 }
 
-.experience-section {
-    width: 470px; 
-    margin-top: 40px;
-    border-top: 1px solid #eeeeee;
-    padding-top: 20px;
+.exp-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 25px 20px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-start;
+    gap: 45px;
 }
 
-.experience-section h2 {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #888;
-    margin-bottom: 25px;
+.exp-wrapper {
+    width: 65%;
+    flex-shrink: 0;
+    flex: 1;    
 }
 
-.exp-item {
-    margin-bottom: 30px;
+.exp-spacer {
+    width: 35%;
 }
 
-.exp-header {
+.exp-main-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: -0.02em;
+}
+
+.exp-header-flex {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 5px;
 }
 
-.exp-title {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: #000;
-}
-
 .exp-date {
-    font-size: 0.85rem;
     color: #999;
-}
-
-.exp-sub {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: #444;
-    margin: 2px 0;
-}
-
-.exp-desc {
     font-size: 0.9rem;
-    color: #666;
-    line-height: 1.5;
+    font-weight: 400;
+}
+
+.school-text {
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+.personal-side-stack {
+    width: 260px;
+    flex-shrink: 0;
+    padding-top: 10px;
+}
+
+.personal-card {
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 20px ;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+
+.side-label {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag-pill {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 3px 5px;
+    border-radius: 2px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #333;
 }
