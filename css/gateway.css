@@ -1,15 +1,21 @@
+/* Apply your font here */
 body {
-    /* Replace 'YourFontName' with the actual font you use in your portfolio */
-    font-family: 'YourFontName', sans-serif; 
+    font-family: 'Inter', sans-serif; /* Change 'Inter' to your actual font name */
     background-color: #fff;
     color: #000;
     margin: 0;
     padding: 0;
-}.gateway-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Keeps footer at bottom if page is short */
+}
+
+.gateway-container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 100px 20px;
+    padding: 80px 20px;
     text-align: center;
+    flex: 1; /* Pushes footer down */
 }
 
 .gateway-header {
@@ -32,8 +38,9 @@ body {
 
 .choice-grid {
     display: flex;
-    gap: 40px;
+    gap: 60px;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .portfolio-card {
@@ -41,16 +48,19 @@ body {
     text-decoration: none;
     color: inherit;
     transition: transform 0.3s ease;
-    text-align: left;
+    text-align: center; /* Centers the name and button text */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items in the card */
 }
 
 .card-image-wrapper {
-    width: 100%;
+    width: 180px; /* Specific size looks better for avatars */
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: 4px;
     background: #f5f5f5;
-    margin-bottom: 20px;
+    margin: 0 auto 25px auto; /* 'auto' on left/right centers the div */
 }
 
 .gateway-img {
@@ -68,13 +78,13 @@ body {
 
 .card-info h3 {
     font-size: 1.2rem;
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
 }
 
 .card-info p {
     color: #666;
     font-size: 0.9rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .enter-btn {
@@ -82,11 +92,33 @@ body {
     font-weight: 600;
     border-bottom: 1.5px solid #000;
     padding-bottom: 2px;
+    display: inline-block;
+}
+
+/* --- FOOTER CSS --- */
+.footer-section {
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #eee;
+    width: 100%;
+    background: #fff;
+}
+
+.footer-section p {
+    font-size: 0.85rem;
+    color: #999;
+    letter-spacing: 0.5px;
 }
 
 /* Mobile Responsive */
 @media (max-width: 600px) {
     .choice-grid {
         flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    
+    .portfolio-card {
+        width: 100%;
     }
 }
