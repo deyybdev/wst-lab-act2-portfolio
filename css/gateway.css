@@ -1,0 +1,92 @@
+body {
+    /* Replace 'YourFontName' with the actual font you use in your portfolio */
+    font-family: 'YourFontName', sans-serif; 
+    background-color: #fff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}.gateway-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.gateway-header {
+    margin-bottom: 60px;
+}
+
+.gateway-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+.gateway-header p {
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.choice-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.portfolio-card {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.card-image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 4px;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+.gateway-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio-card:hover .gateway-img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.card-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.card-info p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.enter-btn {
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-bottom: 1.5px solid #000;
+    padding-bottom: 2px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .choice-grid {
+        flex-direction: column;
+    }
+}
