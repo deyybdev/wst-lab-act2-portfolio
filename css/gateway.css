@@ -1,13 +1,12 @@
-/* Apply your font here */
 body {
-    font-family: 'Inter', sans-serif; /* Change 'Inter' to your actual font name */
+    font-family: 'Inter', sans-serif;
     background-color: #fff;
     color: #000;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Keeps footer at bottom if page is short */
+    min-height: 100vh;
 }
 
 .gateway-container {
@@ -15,7 +14,7 @@ body {
     margin: 0 auto;
     padding: 80px 20px;
     text-align: center;
-    flex: 1; /* Pushes footer down */
+    flex: 1;
 }
 
 .gateway-header {
@@ -48,19 +47,19 @@ body {
     text-decoration: none;
     color: inherit;
     transition: transform 0.3s ease;
-    text-align: center; /* Centers the name and button text */
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers items in the card */
+    align-items: center;
 }
 
 .card-image-wrapper {
-    width: 180px; /* Specific size looks better for avatars */
+    width: 180px;
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: 4px;
     background: #f5f5f5;
-    margin: 0 auto 25px auto; /* 'auto' on left/right centers the div */
+    margin: 0 auto 25px auto;
 }
 
 .gateway-img {
@@ -95,7 +94,6 @@ body {
     display: inline-block;
 }
 
-/* --- FOOTER CSS --- */
 .footer-section {
     padding: 40px 0;
     text-align: center;
@@ -110,7 +108,6 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* Mobile Responsive */
 @media (max-width: 600px) {
     .choice-grid {
         flex-direction: column;
